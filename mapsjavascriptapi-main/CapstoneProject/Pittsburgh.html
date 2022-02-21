@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Los Angeles</title>
+    <title>Pittsburgh</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      .map {
+      #map {
         height: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
@@ -19,12 +19,12 @@
     </style>
   </head>
   <body>
-    <div class="map"></div>
+    <div id="map"></div>
     <script>
       var map;
       // [START maps_marker_simple]
 function initMap() {
-  const myLatLng = { lat: 33.9536, lng: -118.3390 }; 
+  const myLatLng = { lat: 40.4469, lng: -80.01576 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: myLatLng,
@@ -33,7 +33,7 @@ function initMap() {
   new google.maps.Marker({
     position: myLatLng,
     map,
-    title: "Los Angeles",
+    title: "Pittsburgh",
   });
 }
 // [END maps_marker_simple]
